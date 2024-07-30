@@ -1,0 +1,29 @@
+Inspite disappearing elements
+
+Method-1
+
+open developers bar in chromen
+press ctrl+shift+p
+type focus
+now click on "emulate a focus rendering"
+
+
+Method-2
+open developers bar in chrome 
+In the css properties section click on "Event Listeners"
+now in the list select "blur" option click on it 
+now remove all the blur properties
+
+
+Method-3
+hover on the element which you want to take the locator
+now click on the F8 button
+It will freeze the screen then take the xpath
+
+If above methods are not working
+Method-4
+Add the selectorsHub google chrome extension to your browser
+open dev tool and click on selectorsHub extension
+Now click on debugger option which is in the selectorHub
+So now hover on your desired element for a 5 seconds of time then It will automatically pause the page
+For the reference source video link: https://www.youtube.com/watch?v=nB8QA68PwvQ

@@ -1,0 +1,38 @@
+GIT :-
+
+* download the gitfrom the browser
+* check the git version
+* create a empty floder and create a empty file in that floader then run the following commands
+	-> git init
+	-> git status
+	-> git add demo.txt // here demo.txt file if the file which we create on the floder
+	-> git commit -m "committing a text file"
+	-> git config --global user.username
+* Open your Github account and create a new repository with the name "test_demo" and click on "Create repository." This is the remote repository. Next, copy the link of "test_demo."
+* git remote add origin <link>
+* git push origin master
+
+
+for reference use this URL :- https://www.simplilearn.com/tutorials/git-tutorial/git-installation-on-windows#git_installation_on_windows
+
+
+
+
+
+
+
+GIT COMMANDS :- 
+
+* git add <fileName> 
+* git commit -m "text Message"
+* git push origin <branchName> (or) git push origin master 
+
+
+
+GIT DROM CMD :- 
+
+git remote add origin https://github.com/chandraSekhar-alti/playwright-BDD.git
+
+git checkout -b <branch_name>
+
+

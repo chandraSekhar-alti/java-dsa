@@ -1,0 +1,1 @@
+1) What is the difference between Collection and Collections in java ?

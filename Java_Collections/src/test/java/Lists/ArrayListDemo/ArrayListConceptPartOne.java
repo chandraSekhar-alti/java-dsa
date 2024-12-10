@@ -14,8 +14,8 @@ public class ArrayListConcept {
      * Main method demonstrating various operations on ArrayList.
      */
     public static void main(String[] args) {
-        // Declaration: Various ways to declare an ArrayList in Java
-        /*
+        /* Declaration: Various ways to declare an ArrayList in Java
+
             ArrayList<String> temp = new ArrayList<>();   // ArrayList to store Strings
             ArrayList<Integer> temp = new ArrayList<>(); // ArrayList to store Integers
             ArrayList temp = new ArrayList<>();          // Non-generic ArrayList (raw type)

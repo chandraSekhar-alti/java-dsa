@@ -1,4 +1,4 @@
-package Lists;
+package Lists.ArrayListDemo;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -8,7 +8,7 @@ import java.util.Iterator;
  * ArrayList is a resizable array implementation of the List interface.
  * It is part of the Java Collections Framework and is widely used for storing dynamic data.
  */
-public class ArrayListConcept {
+public class ArrayListConceptPartOne {
 
     /**
      * Main method demonstrating various operations on ArrayList.

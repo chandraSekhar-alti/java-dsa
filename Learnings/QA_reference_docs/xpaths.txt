@@ -1,0 +1,106 @@
+STARTS-WITH() :- 
+
+starts-with() is a method that finds those elements whose attribute value changes on refresh on the web page.
+This method checks the starting text of an attribute and finds elements whose attribute changes dynamically.
+
+	syntax :- //nodeElement[starts-with(@attribute, "value")]
+
+
+ENDS-WITH() :- 
+
+ends-with() method checks the ending text of an attribute and finds elements whose attribute changes dynamically on refresh.
+It has the following syntax as follows:
+
+	syntax :- //nodeElement[ends-with(@attribute, "value")]
+
+OR() :- 
+
+In OR expression, two conditions are used and anyone condition either 1st condition or 2nd condition should be true to find element.
+It has the following general form.
+
+	syntax :- //tagname[XPath statement-1 or XPath statement-2]
+In this if the first locator fail it will automatically take the second locator
+
+
+TEXT() :- 
+
+The text() method is used to find elements with an exact match. The syntax for the text() method is given below:
+
+	syntax :- //tagname[text() = 'text_value']
+	ex:- 	//div[text() = 'Recent logins']
+
+CONTAINS() :- 
+
+Contains() is a method which is used to find the value of those attribute which changes dynamically.
+For example, login information.
+
+	syntax :- //tagname[contains(@attribute, 'value')]
+	ex :-	  //button[contains(@name, 'websubmit')]
+
+CHILD() :- 
+
+The child axis is one of the 13 XPath axes that contains all the child nodes of the current context.
+It selects all children elements of the current node.
+
+	syntax :- //child::tagName
+
+	EX :- /span[@class = 'worldwide__list']//child::a (for example here we get 1 of 6 matched out puts)
+		
+		XPath(Russia): //span[@class = 'worldwide__list']//child::a[1]  (1 of 1 matched)
+
+		XPath(Ukraine): //span[@class = 'worldwide__list']//child::a[2] (1 of 1 matched)
+
+		XPath(Belarus): //span[@class = 'worldwide__list']//child::a[3] and so on.
+
+PARENT () :- 
+
+The parent axis selects the parent of the current node. The parent node may be either root node or element node. The root node has no parent.
+Therefore, when the current node is root node, the parent axis is empty. For all other element nodes, the parent axis contains a maximum of one node.
+
+	Syntax :- //parent::tagName
+	EX :- 	//input[@id = 'text']//parent::span
+
+SELF() :- 
+
+Self axis selects the element of the current node. It always finds only one node that represents self-element.
+
+	Syntax: //self::tagName
+
+	EX :- //input[@id = 'text']//self::input 
+
+ANCESTOR () :- 
+
+The ancestor axis selects all ancestor elements (parent, grandparent, great-grandparents, etc.) of the current node.
+This axis always contains the root node (unless the current node is the root node).
+
+	Syntax: //ancestor::tagName
+	EX :-   XPath(Parent node): //input[@id = 'u_0_a']//ancestor::label
+
+		XPath(Grandparent node): //input[@id = 'u_0_a']//ancestor::td
+
+ANCESTOR-OR-SELF :-
+
+This axis selects all ancestor elements (parent, grandparent, great-grandparents, etc.) of the current node and the current node itself.
+
+	XPath(login button): //input[@id = 'u_0_3']//ancestor-or-self::input
+
+DESCENDENT () :- 
+
+The descendant axis selects all descendant elements (children, grandchildren, etc) of the current node.
+
+	EX :- XPath: //div[@class = 'signup_form new']//descendant::input (1 of 3)
+	
+	-->	XPath(Username): //div[@class='signup_form new']//descendant::input[1] (1 of 1 matched)
+
+		XPath(Email address): //div[@class = 'signup_form new']//descendant::input[2]
+
+		XPath(Password): //div[@class = 'signup_form new']//descendant::input[3]
+
+
+
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-package org.example.Arrays.Strings;
+package org.example.Strings;
 
 public class GetNumberFromString {
     public static void main(String[] args) {
